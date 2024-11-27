@@ -1,0 +1,25 @@
+"Resource": [
+  "arn:aws:logs:region:account-id:log-group:*",
+  "arn:aws:cloudwatch:region:account-id:metric-data:*"
+]
+
+
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:GetMetricData",
+        "cloudwatch:ListMetrics",
+        "cloudwatch:GetMetricStatistics",
+        "logs:GetLogEvents",
+        "logs:DescribeLogStreams",
+        "logs:FilterLogEvents",
+        "logs:DescribeLogGroups"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
