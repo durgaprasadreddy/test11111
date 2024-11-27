@@ -23,3 +23,36 @@
     }
   ]
 }
+============================
+
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:PutMetricData",
+                "cloudwatch:GetMetricData",
+                "cloudwatch:ListMetrics",
+                "cloudwatch:GetDashboard",
+                "cloudwatch:PutDashboard"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:CreateDataSource",
+                "cloudwatch:UpdateDataSource",
+                "cloudwatch:DeleteDataSource",
+                "cloudwatch:DescribeDataSources"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+
+==================
